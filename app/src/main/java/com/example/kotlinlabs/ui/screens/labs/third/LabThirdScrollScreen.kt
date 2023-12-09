@@ -38,7 +38,7 @@ fun LabThirdScrollScreen(
             horizontalAlignment = Alignment.Start
         ) {
             items(
-                count = countText + 1,
+                count = countText,
                 key = { it }
             ) { index ->
                 Text(
@@ -48,7 +48,7 @@ fun LabThirdScrollScreen(
                             horizontal = 20.dp,
                             vertical = 10.dp
                         ),
-                    text = "Text number = $index",
+                    text = "Text number = ${index + 1}",
                     textAlign = TextAlign.Start,
                     overflow = TextOverflow.Ellipsis,
                     maxLines = 1,
